@@ -1,8 +1,10 @@
-import NavComponent from './components/NavComponent';
+import Container from './components/Container';
 import './styles/index.scss';
 
 const App = () => (
-  <NavComponent />
+  <>
+    <Container />
+  </>
 );
 
 export default App;

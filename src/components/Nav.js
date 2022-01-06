@@ -1,21 +1,25 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { returnToStocks } from '../redux/stocks/actions';
 
-const Nav = () => (
-  <div className="nav-bar">
-    <h2>FINFO</h2>
-    <ul className="nav-links">
-      <NavLink to="/">
-        <li>Home</li>
-      </NavLink>
-      <NavLink to="/forex">
-        <li>Foreign Exchange</li>
-      </NavLink>
-      <NavLink to="/companies">
-        <li>Company Rank</li>
-      </NavLink>
-    </ul>
-  </div>
-);
+const NavBar = () => {
+  const dispatch = useDispatch();
+  const handleRedirect = () => {
+    dispatch(returnToStocks());
+  };
+  return (
+    <Navbar className="nav-bar">
+      <Container>
+        <Navbar.Brand href="/" className="nav-brand">Finance Center</Navbar.Brand>
+        <Nav className="align-items-left nav-links">
+          <Link className="nav-link" to="/" onClick={handleRedirect}>Stocks</Link>
+          <Link className="nav-link" to="/about">About</Link>
+        </Nav>
+      </Container>
+    </Navbar>
+  );
+};
 
-export default Nav;
+export default NavBar;
