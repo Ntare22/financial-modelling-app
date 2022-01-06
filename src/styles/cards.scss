@@ -1,0 +1,51 @@
+.stock-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+.stock-card {
+  cursor: pointer;
+  background-color: #0abaff;
+  padding: 10px 10px;
+  border: 1px solid black;
+
+  .company-info {
+    display: flex;
+    justify-content: space-between;
+
+    .company {
+      background-color: #000;
+      color: #fff;
+      width: 70%;
+      padding: 4px 4px;
+    }
+
+    .symbol {
+      background-color: #ec9f05;
+      color: #000;
+      font-weight: 800;
+      padding: 4px 4px;
+      width: 70px;
+      height: 30px;
+      text-align: center;
+    }
+  }
+
+  .stock-price {
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+  .exchange {
+    font-weight: 800;
+  }
+
+  &:hover {
+    background-color: #30332e;
+    color: #fff;
+  }
+}
