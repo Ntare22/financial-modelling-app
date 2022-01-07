@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## DEMO video
+
+- Check out a [video](https://www.loom.com/share/e377c0c78a244b36bcd47a2e7a0bd39e) breifly explaing the project.
+
+## DEMO link
+- Checkout the project from this [link](https://finance-centre.herokuapp.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -87,6 +94,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- A Shoutout to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for inpisiring the design.

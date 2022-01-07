@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getCompanyInfo, getStocks, setSearchField } from '../redux/stocks/actions';
+import {
+  getCompanyInfo,
+  getStocks,
+  setSearchField,
+} from '../redux/stocks/actions';
 import CompanyDetails from './CompanyDetails';
 import Search from './Search';
 import Stock from './Stock';
@@ -23,8 +27,9 @@ const Stocks = () => {
     dispatch(setSearchField(event.target.value));
   };
 
-  // eslint-disable-next-line max-len
-  const filteredStocks = stocks.filter((stocks) => stocks.name.toLowerCase().includes(searchField.toLowerCase()));
+  const filteredStocks = stocks.filter(
+    (stocks) => stocks.name.toLowerCase().includes(searchField.toLowerCase()),
+  );
 
   return company.length !== 0 ? (
     <CompanyDetails company={company} />
@@ -32,8 +37,7 @@ const Stocks = () => {
     <div className="stocks-container">
       <Search searchChange={onSearchChange} searchField={searchField} />
       <div className="stock-cards">
-        {
-        filteredStocks.map((stock) => (
+        {filteredStocks.map((stock) => (
           <Stock
             key={stock.symbol}
             symbol={stock.symbol}
@@ -46,8 +50,7 @@ const Stocks = () => {
               handleCompanyInfo(stock.symbol);
             }}
           />
-        ))
-        }
+        ))}
       </div>
     </div>
   );
