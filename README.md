@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# financial-modelling-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## DEMO video
+
+- Check out a [video](https://www.loom.com/share/e377c0c78a244b36bcd47a2e7a0bd39e) breifly explaing the project.
+
+## DEMO link
+- Checkout the project from this [link](https://finance-centre.herokuapp.com/)
 
 ## Available Scripts
 
@@ -68,3 +75,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Author
+
+👤 **Jim Ntare**
+
+- GitHub: [@Ntare22](https://github.com/Ntare22)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- A Shoutout to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for inpisiring the design.
